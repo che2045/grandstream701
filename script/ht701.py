@@ -30,7 +30,7 @@ for line in f:
 	print "Connecting to " + str(nlines) + ". host: " + HOST
 
 	try: 
-		tn = telnetlib.Telnet(HOST, port=2023, timeout=5)
+		tn = telnetlib.Telnet(HOST, port=23, timeout=5)
 
 	except:
 		print "Error connecting to the device. Log entry created.\n"

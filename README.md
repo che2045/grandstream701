@@ -12,7 +12,7 @@ The main idea is that with this script you only need to enter new device passwor
 
 		sed -e 's/^P/set /' -e '0,//s/\=/ /' config.txt > commands.list
 	
-## Hosts list
+## hosts.list
 
 - This file contains IP addresses of devices you want to configure via the script
 

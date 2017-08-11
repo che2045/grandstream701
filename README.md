@@ -13,3 +13,5 @@ In case you have ATA at a remote site with no access to your TFTP service (ACS),
 # Hosts list
 
 - This file contains IP addresses of devices you want to configure via the script
+
+## Warning: since this is plain telnet script, use only secured connection to the device.

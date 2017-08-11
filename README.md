@@ -16,4 +16,10 @@ The main idea is that with this script you only need to enter new device passwor
 
 - This file contains IP addresses of devices you want to configure via the script
 
+# How to run the script
+
+Issue the command:
+
+	python ht701.py
+
 ## Warning: since this is plain telnet script, use only secured connection to the device.

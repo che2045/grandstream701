@@ -2,6 +2,8 @@
 
 In case you have ATA at a remote site with no access to your TFTP service (ACS), instead of configuring the device from scratch I've written this Python script to load configuration to the device.
 
+The main idea is that with this script you only need to enter new device password and SIP account username (number)/password. You can automate that to your liking if you don't mind having passwords written in text files.
+
 # Preparing the config file
 
 - First you need to save template for future configurations, by accessing web interface and downloading configuration (config.txt) to your local PC. Example file is included here, but you should create your own to fit your VoIP provider and locale settings.

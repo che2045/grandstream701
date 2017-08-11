@@ -6,6 +6,6 @@ In case you have ATA at a remote site with no access to your TFTP service (ACS),
 
 - Then you need to prepare the file for the script by issuing this Linux terminal command (or if you are on Windows you can user any text editor that support regular expression - you need to replace "P" at the beginning of every line with "set " and first "=" in every line with " "):
 
-	sed -e 's/^P/set /' -e '0,//s/\=/ /' ht701.txt > commands.list
+		sed -e 's/^P/set /' -e '0,//s/\=/ /' ht701.txt > commands.list
 	
 - Then you need to write the host IPs you want to setup in the file

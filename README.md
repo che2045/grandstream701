@@ -6,7 +6,7 @@ The main idea is that you only enter new device password and SIP account usernam
 
 ## Preparing the config file
 
-- First you need to save template for future configurations, by accessing ATA's web interface and downloading configuration (config.txt) to your local PC. Example file is included here, but you should create your own to match your VoIP provider and locale settings.
+- First you need to create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (config.txt) to your local PC.
 
 - Then you need to prepare the file for the script by issuing following Linux/MacOS terminal command, or if you are on Windows you can use any text editor that supports regular expressions, just replace "P" at the beginning of every line with "set " and first "=" in every line with " ":
 

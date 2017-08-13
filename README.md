@@ -4,7 +4,7 @@ In case you have ATA at a remote site with no access to your TFTP service (ACS) 
 
 The main idea is that you only enter new device password and SIP account username (number)/password with the rest of the options already set. You can automate this to your liking if you don't mind having passwords written in text files.
 
-## Preparing the config file
+## Preparing the config file (you only need to do this once)
 
 - First you need to create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (config.txt) to your local PC.
 

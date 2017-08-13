@@ -20,4 +20,4 @@ The main idea is that you only enter new device password and SIP account usernam
 
 	python ht701.py
 
-### Warning:### since this is plain telnet script, use only secured connection to the device.
+### Warning: since this is plain telnet script, use only secured connection to the device.

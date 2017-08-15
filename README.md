@@ -6,18 +6,19 @@ The main idea is that you only enter new device password and SIP account usernam
 
 ## Preparing the config file (you only need to do this once)
 
-- First you need to create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (config.txt) to your local PC.
+- First you need to create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (`config.txt`) to your local PC.
 
-- Then you need to prepare the file for the script by issuing following Linux/MacOS terminal command, or if you are on Windows you can use any text editor that supports regular expressions, just replace "P" at the beginning of every line with "set " and first "=" in every line with " " and save the new file as "commands.list":
-
-		sed -e 's/^P/set /' -e '0,//s/\=/ /' config.txt > commands.list
+- Then you need to prepare the file for the script by issuing following Linux/MacOS terminal command, or if you are on Windows you can use any text editor that supports regular expressions, just replace "P" at the beginning of every line with "set " and first "=" in every line with " " and save the new file as `commands.list`:
+```
+sed -e 's/^P/set /' -e '0,//s/\=/ /' config.txt > commands.list
+```
 	
 ## hosts.list
 
 - This file contains IP addresses of devices you want to configure via the script
 
 ## How to run the script
-
-	python ht701.py
-
+```
+python ht701.py
+```
 ### Warning: since this is plain telnet script, use only secured connection to the device.

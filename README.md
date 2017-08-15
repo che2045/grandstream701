@@ -10,7 +10,9 @@ The main idea is that you only enter new device password and SIP account usernam
 
 - Then you need to prepare the file for the script by issuing following Linux/MacOS terminal command, or if you are on Windows you can use any text editor that supports regular expressions, just replace "P" at the beginning of every line with "set " and first "=" in every line with " " and save the new file as `commands.list`:
 
-	```sed -e 's/^P/set /' -e '0,//s/\=/ /' config.txt > commands.list```
+	```
+	sed -e 's/^P/set /' -e '0,//s/\=/ /' config.txt > commands.list
+	```
 	
 ## hosts.list
 

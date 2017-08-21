@@ -2,18 +2,12 @@
 
 In case you have ATA at a remote site with no access to your TFTP service (ACS) you are left with no other option than to manualy set the device since it does not have config upload feature. Instead of configuring the device from scratch I've written this Python script to load previously saved configuration to the device.
 
-The main idea is that you only enter new device password and SIP account username (number)/password with the rest of the options already set. You can automate this to your liking if you don't mind having passwords written in text files.
+The main idea is that you only need to enter SIP account username (number)/password with the rest of the options already set. You can automate this to your liking if you don't mind having passwords written in text files.
 
 ## Preparing the config file (you only need to do this once)
 
-- First you need to create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (`config.txt`) to your local PC.
+- Create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (`config.txt`) to your local PC. Copy it to the same folder with the `ht701.py` and `hosts.list`, and the script will parse the file and make output `commands.list`. If you want to change the config you are uploading, delete files `config.txt` and `commands.list`, and repeat the process from the beginning.
 
-- Then you need to prepare the file for the script by issuing following Linux/MacOS terminal command, or if you are on Windows you can use any text editor that supports regular expressions, just replace "P" at the beginning of every line with "set " and first "=" in every line with " " and save the new file as `commands.list`:
-
-	```
-	sed -e 's/^P/set /' -e '0,//s/\=/ /' config.txt > commands.list
-	```
-	
 ## hosts.list
 
 - This file contains IP addresses of devices you want to configure via the script

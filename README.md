@@ -4,9 +4,10 @@ In case you have ATA at a remote site with no access to your TFTP service (ACS) 
 
 The main idea is that you only need to enter SIP account username (number)/password with the rest of the options already set. You can automate this to your liking if you don't mind having passwords written in text files.
 
-## Preparing the config file (you only need to do this once)
+## Preparing the config file
 
-- Create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (`config.txt`) to your local PC. Copy it to the same folder with the `ht701.py` and `hosts.list`, and the script will parse the file and make output `commands.list`. If you want to change the config you are uploading, delete files `config.txt` and `commands.list`, and repeat the process from the beginning.
+- Create the template for future configurations by accessing ATA's web interface, change and apply all the options you need to be set, and download configuration (`config.txt`) to your local PC. Copy it to the same folder with the `ht701.py` and `hosts.list`, and the script will parse the file and make output `commands.list`.
+- If you want to change the config, delete files `config.txt` and `commands.list`, and repeat the process from the beginning.
 
 ## hosts.list
 

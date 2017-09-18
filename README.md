@@ -13,6 +13,11 @@ The main idea is that you only need to enter SIP account username (number)/passw
 
 - This file contains IP addresses of devices you want to configure via the script
 
+## Things you need to edit if you want to use example files
+
+- In commands.list: "your.sip.proxy.net", "your.ntp.server". Other settings are optional
+- In ht701.py: all usernames and passwords
+
 ## How to run the script
 ```
 python ht701.py
